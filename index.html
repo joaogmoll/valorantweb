@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>VALORANT - Programação Web</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <span class="fa fa-phone-alt me-2"></span>
+                    <span>+12 (34)567890123</span>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <span class="far fa-envelope me-2"></span>
+                    <span>joao.moll@gsuite.iff.edu.br</span>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <span>Nos siga:</span>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                        href="https://twitter.com/valorantbrasil"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                        href="https://www.facebook.com/valorantbrasil"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                        href="https://www.youtube.com/channel/UCgWiuB2PQIUhJgEN9No281g"><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                        href="https://br.linkedin.com/company/riot-games"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">Valorant</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">Sobre</a>
+                <a href="service.html" class="nav-item nav-link">Agentes</a>
+                <a href="project.html" class="nav-item nav-link">Times</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="feature.html" class="dropdown-item">Recursos</a>
+                        <a href="quote.html" class="dropdown-item">Mensagem</a>
+                        <a href="team.html" class="dropdown-item">Nosso time</a>
+                        <a href="testimonial.html" class="dropdown-item">Testemunhas</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contato</a>
+            </div>
+            <a href="quote.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Mande uma mensagem<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">VALORANT</h1>
+                                    <a href="https://playvalorant.com/pt-br/"
+                                        class="btn btn-primary py-sm-3 px-sm-4">Jogue grátis</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7">
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">Um jogo de tiro tático
+                                        5x5 com personagens originais</h1>
+                                    <a href="https://playvalorant.com/pt-br/"
+                                        class="btn btn-primary py-sm-3 px-sm-4">Jogue grátis</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Top Feature Start -->
+    <div class="container-fluid top-feature py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-times text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Sem custo</h4>
+                                <span>O jogo é totalmente de graça</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-users text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Multijogador</h4>
+                                <span>O jogo é online, você pode jogar com seus amigos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-phone text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Discord</h4>
+                                <span>Utilize o discord ou o próprio jogo para se comunicar com os outros</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Feature End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg">
+                </div>
+                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-1 text-primary mb-0">2</h1>
+                    <p class="text-primary mb-4">Anos que lançou</p>
+                    <h1 class="display-5 mb-4">NÓS SOMOS VALORANT</h1>
+                    <p class="mb-4">Misture o seu estilo e experiência em um cenário global e competitivo. Você terá 13
+                        rodadas para atacar e defender com disparos certeiros e habilidades táticas. Com apenas uma vida
+                        por rodada, você deve pensar mais rápido que o oponente se quiser sobreviver. Encare inimigos
+                        nos modos Competitivo e Sem Ranque, além da Disputa da Spike e do Mata-Mata!</p>
+                    <a class="btn btn-primary py-3 px-4" href="https://playvalorant.com/pt-br/">Jogue grátis</a>
+                </div>
+                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-5">
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Ganhe premiações</h4>
+                                <span>O jogo contém muitos campeonatos para você ganhar premiações em dinheiro ou
+                                    VP</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Competitivo</h4>
+                                <span>Monte um time e ganhe todos campeonatos com seus amigos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">5263</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Jogadores</span>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">50</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Campeonatos</span>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">10</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Staff</span>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">112040</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Horas jogadas</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Players</p>
+                <h1 class="display-5 mb-5">Agentes presentes</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <h4 class="mb-3">Viper</h4>
+                            <p class="mb-4">A principal arma de Viper é o veneno: ela pode lançar fumaças, paredes e
+                                líquidos que deterioram a vida dos inimigos. Sua ult é uma nuvem gigantesca de veneno,
+                                que reduz a visão e a vida dos oponentes.</p>
+                            <a class="btn btn-sm" href="https://playvalorant.com/pt-br/agents/viper/"><i
+                                    class="fa fa-plus text-primary me-2"></i>Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <h4 class="mb-3">Omen</h4>
+                            <p class="mb-4">Omen é um personagem misterioso, dono de inúmeros codinomes antes dos
+                                acontecimentos de VALORANT.</p>
+                            <a class="btn btn-sm" href="https://playvalorant.com/pt-br/agents/omen/"><i
+                                    class="fa fa-plus text-primary me-2"></i>Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <h4 class="mb-3">Killjoy</h4>
+                            <p class="mb-4">Entre seus artefatos, estão um robô de alarme, uma torreta que atira nos
+                                inimigos no campo de visão de 180º e uma granada explosiva. Sua ult é um dispositivo
+                                capaz de prender inimigos em um vasto raio de alance.</p>
+                            <a class="btn btn-sm" href="https://playvalorant.com/pt-br/agents/killjoy/"><i
+                                    class="fa fa-plus text-primary me-2"></i>Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <h4 class="mb-3">Cypher</h4>
+                            <p class="mb-4">Suas habilidades consistem em uma jaula que bloqueia a visão e reduz a
+                                velocidade, uma câmera de vigilância e um fio-armadilha. Sua ult revela a localização de
+                                todos os oponentes restantes.</p>
+                            <a class="btn btn-sm" href="https://playvalorant.com/pt-br/agents/cypher/"><i
+                                    class="fa fa-plus text-primary me-2"></i>Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <h4 class="mb-3">Sova</h4>
+                            <p class="mb-4">O personagem pode atirar uma flecha de choque, uma flecha que localiza os
+                                inimigos e um drone. Sua ult é um arco que dispara três longos ataques, que ultrapassam
+                                paredes.</p>
+                            <a class="btn btn-sm" href="https://playvalorant.com/pt-br/agents/sova/"><i
+                                    class="fa fa-plus text-primary me-2"></i>Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <h4 class="mb-3">Sage</h4>
+                            <p class="mb-4">Seus poderes são curar aliados, reduzir a velocidade dos inimigos e criar
+                                barreiras. Sua ult permite que ela ressuscite um aliado morto.</p>
+                            <a class="btn btn-sm" href="https://playvalorant.com/pt-br/agents/sage/"><i
+                                    class="fa fa-plus text-primary me-2"></i>Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Quote Start -->
+    <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="display-5 text-center mb-5">Mande uma mensagem</h1>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-light border-0" id="gname"
+                                        placeholder="Gurdian Name">
+                                    <label for="gname">Seu nome</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-light border-0" id="gmail"
+                                        placeholder="Gurdian Email">
+                                    <label for="gmail">Seu Email</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-light border-0" id="cname"
+                                        placeholder="Child Name">
+                                    <label for="cname">Seu número</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-light border-0" id="cage"
+                                        placeholder="Child Age">
+                                    <label for="cage">Tipo da mensagem</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here"
+                                        id="message" style="height: 100px"></textarea>
+                                    <label for="message">Mensagem</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary py-3 px-4" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Times</p>
+                <h1 class="display-5 mb-5">Alguns times presentes</h1>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">Todos</li>
+                        <li class="mx-2" data-filter=".first">América do Sul</li>
+                        <li class="mx-2" data-filter=".second">América do Norte</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/time-1.png" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">LOUD</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/time-1.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2"
+                                    href="https://liquipedia.net/valorant/LOUD"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/time-2.png" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Sentinels</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/time-2.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2"
+                                    href="https://liquipedia.net/valorant/Sentinels"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/time-3.png" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">MIBR</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/time-3.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2"
+                                    href="https://liquipedia.net/valorant/MIBR"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/time-4.png" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Cloud9</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/time-4.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2"
+                                    href="https://liquipedia.net/valorant/Cloud9"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/time-5.png" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">FÚRIA</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/time-5.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2"
+                                    href="https://liquipedia.net/valorant/FURIA_Esports"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/time-6.png" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">100 Thieves</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/time-6.png"
+                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2"
+                                    href="https://liquipedia.net/valorant/100_Thieves"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Membros</p>
+                <h1 class="display-5 mb-5">Membros da equipe dedicados</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Szabolcs Bakos</h4>
+                            <p class="text-primary">(UI/UX) designer</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2"
+                                    href="https://www.facebook.com/wishmylove"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://twitter.com/wishmylove"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://instagram.com/wishmylove"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">João Gabriel Moll</h4>
+                            <p class="text-primary">Técnico de Informática</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2" href="https://twitter.com/joaogmoll"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://instagram.com/wishmylove"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/team-3.png" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">HTML Codex</h4>
+                            <p class="text-primary">Dono do template</p>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2"
+                                    href="https://www.facebook.com/htmlcodex"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://twitter.com/htmlcodex"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle me-2"
+                                    href="https://www.instagram.com/htmlcodex"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Testemunhas</p>
+                    <h1 class="display-5 mb-5">Os nossos jogadores dizem sobre nós</h1>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="">
+                            <p class="fs-5">EU SOU CAMPEÃO MUNDIAL DE VALORANT 🌪️
+                            </p>
+                            <h4>Aspas</h4>
+                            <span>Professional Player</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="">
+                            <p class="fs-5">😚😚
+                            </p>
+                            <h4>Sacy</h4>
+                            <span>Professional Player</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Nossa sede</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>West Los Angeles, Califórnia, EUA</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>joao.moll@gsuite.iff.edu.br</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://twitter.com/valorantbrasil"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://www.facebook.com/valorantbrasil"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://www.youtube.com/channel/UCgWiuB2PQIUhJgEN9No281g"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://br.linkedin.com/company/riot-games"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Outro agentes</h4>
+                    <a class="btn btn-link" href="https://playvalorant.com/pt-br/agents/kay-o/">KAY/O</a>
+                    <a class="btn btn-link" href="https://playvalorant.com/pt-br/agents/neon/">Neon</a>
+                    <a class="btn btn-link" href="https://playvalorant.com/pt-br/agents/yoru/">Yoru</a>
+                    <a class="btn btn-link" href="https://playvalorant.com/pt-br/agents/fade/">Fade</a>
+                    <a class="btn btn-link" href="https://playvalorant.com/pt-br/agents/chamber/">Chamber</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Links rápidos</h4>
+                    <a class="btn btn-link" href="about.html">Sobre nos</a>
+                    <a class="btn btn-link" href="contact.html">Nos contate</a>
+                    <a class="btn btn-link" href="service.html">Nossos agentes</a>
+                    <a class="btn btn-link"
+                        href="https://www.riotgames.com/pt-br/terms-of-service-BR?_ga=2.157695225.233004048.1665872181-2042993349.1665872181">Termos
+                        de serviço</a>
+                    <a class="btn btn-link" href="quote.html">Mande uma mensagem</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Vamos mandar novidades para o seu email.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Seu email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">VALORANT - Programação Web</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
